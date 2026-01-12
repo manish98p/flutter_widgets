@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/container_Sized.dart';
- void main() => runApp(new MyApp());
-  class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.deepPurple ),
-        home: Container_Sized(),
-      
+    return const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text('Hello World!'),
+        ),
+      ),
     );
   }
 }
